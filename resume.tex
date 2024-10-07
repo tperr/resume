@@ -1,0 +1,41 @@
+\documentclass[twocolumn,letterpaper,12pt]{article}
+\usepackage[ 
+	includehead,
+	nomarginpar,
+	margin=0.5in,
+	headheight=0.5in
+]{geometry}
+\usepackage{fancyhdr}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=cyan,
+}
+
+\usepackage{xcolor}
+\newenvironment{greytext}{\tiny\color{gray}}{\ignorespacesafterend}
+
+\setlength{\parindent}{0pt}
+
+\pagenumbering{gobble}
+
+% Document begins
+\begin{document}
+\pagestyle{fancy}
+
+\fancyhead{}
+\fancyhead[L]{\input{header}}
+\input{profile}
+
+\input{work}
+
+\input{edu}
+
+\input{projects}
+
+\input{certificates}
+
+% Document ends
+\end{document}
