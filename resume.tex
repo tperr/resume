@@ -1,4 +1,4 @@
-\documentclass[twocolumn,letterpaper,12pt]{article}
+\documentclass[twocolumn,letterpaper,10pt]{article}
 \usepackage[ 
 	includehead,
 	nomarginpar,
@@ -14,12 +14,20 @@
 	urlcolor=cyan,
 }
 
-\usepackage{xcolor}
+\raggedbottom
+
+\usepackage[dvipsnames]{xcolor}
 \newenvironment{greytext}{\tiny\color{gray}}{\ignorespacesafterend}
+
+\usepackage{fontawesome}
 
 \setlength{\parindent}{0pt}
 
 \pagenumbering{gobble}
+
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=0em, topsep=0em}
+
 
 % Document begins
 \begin{document}
@@ -28,13 +36,10 @@
 \fancyhead{}
 \fancyhead[L]{\input{header}}
 \input{profile}
-
-\input{work}
-
 \input{edu}
-
+\input{skills}
+\input{work}
 \input{projects}
-
 \input{certificates}
 
 % Document ends
