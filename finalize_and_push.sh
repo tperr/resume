@@ -17,7 +17,7 @@ if [[ "$answer" == "n" || "$answer" == "N" ]]; then
     exit 0
 fi
 git add .
-git commit -m "Updated resume $(date +'%d%m%y')"
+git commit -m "Updated resume $(date +'%d/%m/%y')"
 if [ $? -ne 0 ]; then
     echo "Commit failed. Aborting push."
     exit 1
