@@ -1,4 +1,6 @@
 #!/bin/bash
+rm *.aux *.log *.out *.toc *.jpg *.fdb_latexmk *.fls *.synctex.gz
+
 cp resume.pdf tim_perr_resume.pdf
 magick resume.pdf resume.jpg
 if [ $? -ne 0 ]; then
